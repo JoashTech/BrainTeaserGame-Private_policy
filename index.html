@@ -228,57 +228,6 @@
             margin: 25px 0;
         }
         
-        .third-party-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            margin: 25px 0;
-        }
-        
-        .third-party-card {
-            background: white;
-            border: 1px solid #e2e8f0;
-            border-radius: 15px;
-            padding: 20px;
-            transition: all 0.3s;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
-        
-        .third-party-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 20px -8px rgba(155,81,224,0.3);
-            border-color: #9B51E0;
-        }
-        
-        .third-party-card h4 {
-            color: #2d3748;
-            margin-bottom: 10px;
-            font-size: 1.2em;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        
-        .third-party-card p {
-            font-size: 0.95em;
-            margin-bottom: 15px;
-            color: #718096;
-        }
-        
-        .third-party-card a {
-            color: #9B51E0;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9em;
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
-        }
-        
-        .third-party-card a:hover {
-            text-decoration: underline;
-        }
-        
         .badge {
             display: inline-block;
             padding: 4px 12px;
@@ -520,7 +469,7 @@
             <h1>Brain Teaser Game</h1>
             <p>Privacy Policy</p>
             <div class="last-updated">
-                <span>📅 Last Updated: March 21, 2026</span>
+                <span>📅 Last Updated: March 28, 2026</span>
             </div>
         </div>
         
@@ -534,6 +483,7 @@
                 <a href="#ads">📺 Ads</a>
                 <a href="#coins">🪙 Coins</a>
                 <a href="#children">👶 Children</a>
+                <a href="#age">👤 Age</a>
                 <a href="#rights">⚖️ Your Rights</a>
                 <a href="#contact">📧 Contact</a>
             </div>
@@ -550,6 +500,7 @@
                     <div class="toc-item"><a href="#section6">6. Virtual Economy (Coins & Lives)</a></div>
                     <div class="toc-item"><a href="#section7">7. Data Storage</a></div>
                     <div class="toc-item"><a href="#section8">8. Children's Privacy</a></div>
+                    <div class="toc-item"><a href="#section8a">8A. Age Requirements</a></div>
                     <div class="toc-item"><a href="#section9">9. Your Rights</a></div>
                     <div class="toc-item"><a href="#section10">10. International Data</a></div>
                     <div class="toc-item"><a href="#section11">11. Data Retention</a></div>
@@ -572,64 +523,23 @@
                 </div>
             </div>
             
-            <!-- Section 2: Data We Collect -->
+            <!-- Section 2: Data We Collect (SIMPLIFIED) -->
             <div class="section" id="section2">
                 <h2><span>2</span> Data We Collect</h2>
                 
-                <table class="data-table">
-                    <tr>
-                        <th>Data Type</th>
-                        <th>What We Collect</th>
-                        <th>Purpose</th>
-                        <th>Storage</th>
-                    </tr>
-                    <tr>
-                        <td><strong>Account Info</strong></td>
-                        <td>Anonymous User ID (Firebase UID)</td>
-                        <td>Leaderboard identification, progress tracking</td>
-                        <td>Firebase Servers</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Profile Data</strong></td>
-                        <td>Player name, Profile picture (Base64), Country</td>
-                        <td>Personalization, country leaderboards</td>
-                        <td>Local + Firebase</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Game Progress</strong></td>
-                        <td>Levels completed, Stars earned, Lives, Streaks</td>
-                        <td>Save game state, statistics</td>
-                        <td>Local Storage</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Virtual Economy</strong></td>
-                        <td>Coin balance, Purchase history, Lifetime earnings</td>
-                        <td>In-game economy, leaderboard rankings</td>
-                        <td>Local + Firebase</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Device Info</strong></td>
-                        <td>Device model, OS version, Screen size, Country</td>
-                        <td>Analytics, optimization, country detection</td>
-                        <td>Third-party services</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Advertising ID</strong></td>
-                        <td>Google Advertising ID</td>
-                        <td>Personalized ads, ad frequency capping</td>
-                        <td>Ad networks</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Usage Data</strong></td>
-                        <td>Games played, Correct answers, Time spent</td>
-                        <td>Statistics, achievements, improvements</td>
-                        <td>Local + Firebase</td>
-                    </tr>
-                </table>
+                <p><strong>In simple terms:</strong> We don't collect your name, email, address, or any personal information. We don't know who you are.</p>
                 
                 <div class="info-box">
-                    <p><strong>📌 Note:</strong> All game progress, statistics, and preferences are stored locally on your device using Android's SharedPreferences. Leaderboard data (coins, games played, perfect levels) is synced to Firebase for ranking purposes.</p>
+                    <h4>What we do collect (anonymously):</h4>
+                    <ul>
+                        <li><strong>Device ID (Advertising ID)</strong> - A random ID from your phone that ad networks use to show relevant ads</li>
+                        <li><strong>Game Stats</strong> - Your lifetime coins, games played, and achievements (for leaderboards)</li>
+                        <li><strong>Country</strong> - If you choose to set it, for country-specific leaderboards</li>
+                        <li><strong>Player Name</strong> - Only what you choose to call yourself (like "BRAIN_MASTER")</li>
+                    </ul>
                 </div>
+                
+                <p><strong>All this data is anonymous.</strong> It cannot be traced back to you as an individual.</p>
             </div>
             
             <!-- Section 3: How We Use Data -->
@@ -664,7 +574,7 @@
                     
                     <div class="third-party-card">
                         <h4><span>📱</span> Google AdMob</h4>
-                        <p><strong>Purpose:</strong> Rewarded ads, Interstitial ads, Banner ads</p>
+                        <p><strong>Purpose:</strong> For ads</p>
                         <p><strong>Data Collected:</strong> Advertising ID, IP address, Device info, Ad interactions</p>
                         <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy →</a>
                     </div>
@@ -678,14 +588,14 @@
                     
                     <div class="third-party-card">
                         <h4><span>📺</span> Liftoff (Vungle)</h4>
-                        <p><strong>Purpose:</strong> Video and interstitial ads</p>
+                        <p><strong>Purpose:</strong> For ads</p>
                         <p><strong>Data Collected:</strong> Device info, Advertising ID, IP address</p>
                         <a href="https://vungle.com/privacy/" target="_blank">Vungle Privacy Policy →</a>
                     </div>
                     
                     <div class="third-party-card">
                         <h4><span>👥</span> Facebook Audience Network</h4>
-                        <p><strong>Purpose:</strong> Native and rewarded ads</p>
+                        <p><strong>Purpose:</strong> ads</p>
                         <p><strong>Data Collected:</strong> Device ID, Advertising ID, IP address, Location</p>
                         <a href="https://www.facebook.com/about/privacy/" target="_blank">Facebook Data Policy →</a>
                     </div>
@@ -699,40 +609,22 @@
                 </div>
             </div>
             
-            <!-- Section 5: Advertising -->
+            <!-- Section 5: Advertising (SIMPLIFIED) -->
             <div class="section" id="section5">
                 <h2><span>5</span> Advertising</h2>
                 
                 <div class="highlight-box">
-                    <h3 style="margin-top: 0;">📺 How Ads Work in Brain Teaser Game</h3>
+                    <p><strong>📺 Ads keep the game free.</strong> That's it. We show ads from trusted partners (Google, Unity, Vungle, Facebook).</p>
                     
-                    <h4>Rewarded Ads</h4>
-                    <ul>
-                        <li><strong>Double Daily Challenge Coins</strong> - Watch an ad to double your 10-coin reward to 20 coins</li>
-                        <li><strong>Consolation Coins</strong> - Watch an ad to get 5 coins after a wrong answer</li>
-                        <li><strong>Time Bonus</strong> - Watch an ad to add +10 seconds to timer</li>
-                        <li><strong>Free Coins in Shop</strong> - Daily ad offers for 25 coins or 3 lives</li>
-                        <li><strong>Exit Reward</strong> - Watch an ad when leaving Shop for +20 coins +1 life</li>
+                    <ul style="margin-top: 15px;">
+                        <li><strong>Rewarded Ads</strong> - Watch voluntarily for bonus coins</li>
+                        <li><strong>Interstitial Ads</strong> - Appear between levels</li>
+                        <li><strong>Banner Ads</strong> - Small ads at the bottom</li>
                     </ul>
                     
-                    <h4>Interstitial Ads</h4>
-                    <ul>
-                        <li>Shown at natural breaks (after 3, 6, 9, 12 levels completed)</li>
-                        <li>No reward - just a short break between gameplay</li>
-                    </ul>
-                    
-                    <h4>Banner Ads</h4>
-                    <ul>
-                        <li>Persistent banner at bottom of LevelActivity</li>
-                        <li>Non-intrusive, always visible</li>
-                    </ul>
+                    <p style="margin-top: 15px;">Ad partners may use your advertising ID to show relevant ads. You can opt out anytime in your device settings.</p>
+                    <p><strong>Want no ads?</strong> Purchase an ad-free subscription in the Shop.</p>
                 </div>
-                
-                <p><strong>Opt-Out Options:</strong></p>
-                <ul>
-                    <li>Purchase an ad-free subscription (3, 6, or 12 months) to remove all ads</li>
-                    <li>Opt out of personalized ads in your device settings (Android Settings → Google → Ads → Opt out of personalized ads)</li>
-                </ul>
             </div>
             
             <!-- Section 6: Virtual Economy -->
@@ -809,6 +701,24 @@
                 </div>
                 
                 <p>In compliance with COPPA (Children's Online Privacy Protection Act), we do not request or store personal information from children. All gameplay data is anonymous.</p>
+            </div>
+            
+            <!-- Section 8A: Age Requirements -->
+            <div class="section" id="section8a">
+                <h2><span>8A</span> Age Requirements</h2>
+                
+                <div class="info-box">
+                    <p><strong>👶 Important Age Information:</strong></p>
+                    <ul>
+                        <li>The Brain Teaser Game is intended for users aged <strong>13 and above</strong>.</li>
+                        <li>If you are under 13, you must not use this Game without parental consent and supervision.</li>
+                        <li>We do not knowingly collect personal information from children under 13.</li>
+                        <li>If you believe a child under 13 has provided us with personal information, please contact us immediately so we can delete it.</li>
+                        <li>Parents/guardians are responsible for supervising minors' use of the Game.</li>
+                    </ul>
+                </div>
+                
+                <p>By using the Game, you represent that you are at least 13 years of age, or if you are under 13, that you have obtained parental consent to use the Game.</p>
             </div>
             
             <!-- Section 9: Your Rights -->
@@ -936,6 +846,15 @@
                                 <small>Access/Delete/Export</small>
                             </div>
                         </div>
+                        
+                        <!-- Copyright Complaint Card -->
+                        <div class="contact-item" onclick="window.location.href='mailto:contactjoshtech@gmail.com?subject=Copyright%20Complaint%20-%20Brain%20Teaser%20Game&body=Hello%20JoshTechApps%20Copyright%20Team%2C%0A%0AI%20wish%20to%20report%20a%20copyright%20issue...'">
+                            <span>⚖️</span>
+                            <div class="contact-content">
+                                <strong>COPYRIGHT</strong>
+                                <small>DMCA Complaints</small>
+                            </div>
+                        </div>
                     </div>
                     
                     <!-- Quick Action Buttons -->
@@ -946,6 +865,10 @@
                         
                         <a href="https://joshtechapps.netlify.app" target="_blank" class="contact-button" style="background: #4299e1;">
                             <span>🌐</span> VISIT WEBSITE
+                        </a>
+                        
+                        <a href="mailto:contactjoshtech@gmail.com?subject=Copyright%20Complaint" class="contact-button" style="background: #f56565;">
+                            <span>⚖️</span> COPYRIGHT
                         </a>
                     </div>
                     
@@ -996,7 +919,8 @@
             
             <div class="copyright">
                 <p>© 2024-2026 JoshTechApps. All rights reserved.</p>
-                <p style="margin-top: 10px; font-size: 0.8em;">This privacy policy was last updated on March 21, 2026.</p>
+                <p style="margin-top: 10px; font-size: 0.8em;">This privacy policy was last updated on March 28, 2026.</p>
+                <p style="margin-top: 10px; font-size: 0.8em;">For copyright complaints: <strong>contactjoshtech@gmail.com</strong> (Subject: Copyright Complaint)</p>
                 <p style="margin-top: 15px;">Made with ❤️ Love for Learning</p>
             </div>
         </div>
